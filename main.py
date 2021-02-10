@@ -1,3 +1,8 @@
+'''
+    File name: main.py
+    Author: Haytham Chakiri
+    Date created: 02/11/2021
+'''
 from pydub import AudioSegment as audio
 
 MORSE_CODE_DICT = { 'A':'.-', 'B':'-...',
