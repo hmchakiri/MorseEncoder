@@ -1,2 +1,2 @@
 # MorseEncoder
-This app encode text to Morse code (audio)
+This app encode text to Morse code (audio) 12 WPM
