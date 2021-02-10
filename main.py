@@ -31,8 +31,8 @@ def encryption(message):
 
 
 msg = encryption("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum")
-high = audio.from_wav("1.wav")
-low = audio.from_wav("0.wav")
+hyphen = audio.from_wav("hyphen.wav")
+dot = audio.from_wav("sdot.wav")
 none = audio.from_wav("none.wav")
 
 
@@ -43,11 +43,11 @@ combined_sounds = none
 
 for element in msg:
     if (element == "-"):
-        combined_sounds += high + none
+        combined_sounds += hyphen + none
         print('1')
     if (element == "."):
         print('0')
-        combined_sounds += low + none
+        combined_sounds += dot + none
     if (element == "_"):
         print("_")
         combined_sounds += none
